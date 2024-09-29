@@ -24,23 +24,26 @@
 
 @media (max-width: 768px) {
     .hiding {
-      display: none;
+        display: none;
     }
-    .spacer{
+    .spacer {
         margin-top: 30px;
     }
-  }
-@media screen and (min-width: 768px){
-    .magic-container{
+}
+
+@media screen and (min-width: 768px) {
+    .magic-container {
         position: relative;
+        z-index: 1; /* Ensure the container is above other elements */
     }
-    
-    .magic-card{
-        position: absolute;
-        bottom: -6em;
+
+    .magic-card {
+        position: relative; /* Change from absolute to relative */
+        bottom: -4em; /* Adjust margin to create the "spilling" effect */
+        z-index: 2; /* Ensure the card is above the container */
     }
-    .magic-offset{
-        margin-bottom: 3em;
+
+    .magic-offset {
+        margin-bottom: 2em; /* Adjust as necessary */
     }
-    
 }
