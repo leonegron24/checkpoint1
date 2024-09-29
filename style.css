@@ -1,0 +1,46 @@
+/* custom classes */
+.artback{
+    background-image: url(andrew-neel-jtsW--Z6bFw-unsplash.jpg);
+    background-position: center;   
+}
+
+
+.magic-height{
+    min-height: 20vh;
+}
+
+.leafpic{
+    max-height: 40vh;
+    margin-top: 40px;; 
+}
+
+.boxheight{
+    max-height: 100px;
+}
+
+.grayback{
+    background-color: lightgray;
+}
+
+@media (max-width: 768px) {
+    .hiding {
+      display: none;
+    }
+    .spacer{
+        margin-top: 30px;
+    }
+  }
+@media screen and (min-width: 768px){
+    .magic-container{
+        position: relative;
+    }
+    
+    .magic-card{
+        position: absolute;
+        bottom: -6em;
+    }
+    .magic-offset{
+        margin-bottom: 3em;
+    }
+    
+}
